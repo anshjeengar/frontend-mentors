@@ -3,54 +3,56 @@ $Light-gray: hsl(212, 45%, 89%);
 $Grayish-blue: hsl(220, 15%, 55%);
 $Dark-blue: hsl(218, 44%, 22%);
 
-
-    .attribution {
-      margin-top: 20px;
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-
-    body {
-      background-color: $Light-gray;
-      font-family: 'Outfit';
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    .wrapper {
-      background-color: $White;
-      border-radius: 15px;
-      width: 280px;
-      display: flex;
-      justify-content: center;
-      .card{
-        // width: 250px;
-        // margin: 15px;
-        .qr-code{
-          img{
-            width: 250px;
-            border-radius: 15px;
-            margin: 15px;
-
-          }
+body {
+  box-sizing: border-box;
+  background-color: $Light-gray;
+  font-family: "Outfit";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .wrapper {
+    background-color: $White;
+    border-radius: 15px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card {
+      .qr-code {
+        img {
+          width: 90%;
+          border-radius: 15px;
+          margin: 15px;
+          margin-bottom: 0;
         }
-        .card-text{
-          margin: 20px;
-          text-align: center;
-          .card-heading{
-            font-size: large;
-            font-weight: 700;
-            color: $Dark-blue;
-          }
-          .card-description{
-            font-size: 15px;
-            font-weight: 400;
-            color: $Grayish-blue;
-          }
+      }
+      .card-text {
+        margin: 0 15px 15px 15px;
+        text-align: center;
+        padding: 10px;
+        .card-heading {
+          margin-top: 0;
+          font-size: 20px;
+          font-weight: 700;
+          color: $Dark-blue;
+        }
+        .card-description {
+          margin: 0px 5px;
+          font-size: 13px;
+          font-weight: 400;
+          color: $Grayish-blue;
         }
       }
     }
+  }
+  .attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
     }
+  }
+}
